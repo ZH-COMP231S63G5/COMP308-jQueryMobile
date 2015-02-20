@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
     <title>Zhixiang Hu Tech Mobile Space</title>
-    <link href="css/app.css" rel="stylesheet" />
     <link href="Content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
     <link href="css/owl.carousel.css" rel="stylesheet" />
     <link href="css/owl.theme.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet"/>
 </head>
 <body onload="init();">
 
@@ -17,7 +17,9 @@
     <div data-role="page" id="home">
 
         <header data-role="header">
-            <h1>Welcome to Zhixiang Hu Mobile Space</h1>
+            <div class="center-wrapper">
+                <img src="images/logo.png" alt="" />
+            </div>
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" class="ui-btn-active ui-state-persist ui-link" data-icon="home" data-transition="slide">HOME</a> </li>
@@ -29,22 +31,28 @@
 
         <section data-role="content">
             <div class="center-wrapper">
-            <h1>Home</h1>
-                <a href="#projects">
-                    <img src="http://placehold.it/200x200/" alt=""/>
-                </a>
-                <a href="#services">
-                    <img src="http://placehold.it/200x200/" alt=""/>
-                </a>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <div class="ui-bar ui-bar-a" >
+                                <a href="#projects" class="home-img-btn">Projects</a>
+                            </div></div>
+                        <div class="ui-block-b">
+                            <div class="ui-bar ui-bar-a" >
+                                <a href="#services" class="home-img-btn">Services</a>
+                            </div></div>
+                    </div>
             </div>
         </section>
 
 
-              <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="item"><img src="images/App1.png" alt="Resturant Map"></div>
-                <div class="item"><img src="images/App2.png" alt="Weather Inquiry"></div>
-                <div class="item"><img src="images/App3.png" alt="Resturant Order"></div>
-              </div>
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="images/App1.png" alt="Resturant Map"></div>
+            <div class="item">
+                <img src="images/App2.png" alt="Weather Inquiry"></div>
+            <div class="item">
+                <img src="images/App3.png" alt="Resturant Order"></div>
+        </div>
 
 
         <footer data-role="footer" data-position="fixed">
@@ -62,7 +70,7 @@
     <div data-role="page" id="aboutme">
 
         <header data-role="header">
-            <h1>My Projects</h1>
+            <h1>About me</h1>
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">HOME</a> </li>
@@ -73,29 +81,31 @@
         </header>
 
         <section data-role="content">
-            <h1>About me</h1>
+            <h1>About me
+                            <a href="#home" class="ui-btn ui-btn-inline ui-corner-all" data-icon="back" data-transition="slideup">Back</a>
+
+            </h1>
             <img src="images/aboutme.jpg" alt="" />
 
-            <div class="voffset3">
-                <h2>Personal Tagline</h2>
-                <h4>
-                    <ul class="voffset5">
-                        <li class="voffset4">Ultimate technology fan</li>
-                        <li class="voffset4">Combine technologies and business requirements</li>
-                        <li class="voffset4">Create excellent user experience</li>
-                    </ul>
-                </h4>
-            </div>
+
+            <h2>Personal Tagline</h2>
+            <h4>
+                <ul class="voffset5">
+                    <li class="voffset4">Ultimate technology fan</li>
+                    <li class="voffset4">Combine technologies and business requirements</li>
+                    <li class="voffset4">Create excellent user experience</li>
+                </ul>
+            </h4>
+
+            <a href="#cv">Read my CV</a>
+            <br />
+            <br />
 
 
-            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
         </section>
 
         <footer data-role="footer" data-position="fixed">
             <h4>Copyright 2015</h4>
-            <div class="center-wrapper">
-                <a href="../index.html" rel="external" data-role="none">Desktop Version</a>
-            </div>
         </footer>
 
     </div>
@@ -125,9 +135,6 @@
 
         <footer data-role="footer" data-position="fixed">
             <h4>Copyright 2015</h4>
-            <div class="center-wrapper">
-            <a href="../index.html" rel="external" data-role="none">Desktop Version</a>
-            </div>
         </footer>
 
     </div>
@@ -150,18 +157,101 @@
         </header>
 
         <section data-role="content">
-            <h1>My Projects</h1>
+            <h1 class="center-wrapper">My Projects</h1>
+
+<div class="ui-grid-a">
+    <div class="ui-block-a"><a href="#project1"><img src="images/App11.png" alt=""/></a></div>
+    <div class="ui-block-b"><a href="#project1">Resturant Map</a></div>
+</div>
+
+<div class="ui-grid-a">
+    <div class="ui-block-a"><a href="#project2"><img src="images/App21.png" alt=""/></a></div>
+    <div class="ui-block-b"><a href="#project2">Weather Inquiry</a></div>
+</div>
+
+<div class="ui-grid-a">
+    <div class="ui-block-a"><a href="#project3"><img src="images/App31.png" alt=""/></a></div>
+    <div class="ui-block-b"><a href="#project3">Resturant Order</a></div>
+</div>
 
             <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
         </section>
 
         <footer data-role="footer" data-position="fixed">
             <h4>Copyright 2015</h4>
-            <div class="center-wrapper">
-            <a href="../index.html" rel="external" data-role="none">Desktop Version</a>
-            </div>
         </footer>
     </div>
+
+    <!-- Project 1 page warper -->
+    <div data-role="page" id="project1">
+
+        <header data-role="header">
+            <h1>Project 1</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">HOME</a> </li>
+                    <li><a href="#aboutme" data-icon="gear">About</a></li>
+                    <li><a href="#contactme" data-icon="info">contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <h1>My Projects</h1>
+
+            <a href="#projects" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015</h4>
+        </footer>
+    </div>
+
+    <!-- Project 2 page warper -->
+    <div data-role="page" id="project2">
+        <header data-role="header">
+            <h1>Project 1</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">HOME</a> </li>
+                    <li><a href="#aboutme" data-icon="gear">About</a></li>
+                    <li><a href="#contactme" data-icon="info">contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <h1>Project 2</h1>
+
+            <a href="#projects" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015</h4>
+        </footer>
+    </div>
+
+<!-- Project 3 page warper -->
+    <div data-role="page" id="project3">
+        <header data-role="header">
+            <h1>Project 1</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">HOME</a> </li>
+                    <li><a href="#aboutme" data-icon="gear">About</a></li>
+                    <li><a href="#contactme" data-icon="info">contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <h1>Project 3</h1>
+
+            <a href="#projects" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015</h4>
+        </footer>
+    </div>
+
+
 
 
 
@@ -187,16 +277,44 @@
 
         <footer data-role="footer" data-position="fixed">
             <h4>Copyright 2015</h4>
-            <div class="center-wrapper">
-            <a href="../index.html" rel="external" data-role="none">Desktop Version</a>
-            </div>
         </footer>
     </div>
 
 
+    <!-- CV page warper -->
+    <div data-role="page" id="cv">
+
+        <header data-role="header">
+            <h1>My CV</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">HOME</a> </li>
+                    <li><a href="#aboutme" data-icon="gear">About</a></li>
+                    <li><a href="#contactme" data-icon="info">contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <h1>HIGHLIGHTS OF QUALIFICATIONS</h1>
+            <ul>
+                <li>Microsoft .net Platform expert</li>
+                <li>20+ year experience on computer technologies, fast leaner</li>
+                <li>Solid basic knowledge on computer technologies</li>
+                <li>Excellent on providing best solutions to customer</li>
+                <li>Strong in both software and hardware</li>
+                <li>Degree holder of Computer Science</li>
+            </ul>
+            <a href="#aboutme" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+        </section>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2015</h4>
+        </footer>
+    </div>
 
 
-<!-- Javascript Section -->
+    <!-- Javascript Section -->
     <script src="Scripts/jquery-1.8.0.min.js"></script>
     <script src="Scripts/jquery.mobile-1.4.5.min.js"></script>
     <script src="Scripts/app.js"></script>
