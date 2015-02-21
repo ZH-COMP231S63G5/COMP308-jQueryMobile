@@ -1,4 +1,11 @@
-﻿.center-wrapper{
+﻿/***************************
+        File name : app.css
+        Author's name : Zhixiang Hu
+        Web site name : Zhixiang Hu Protfolio Site
+        This is style sheet of the web site
+***************************/
+
+.center-wrapper{
   text-align: center;
 }
 .center-wrapper * {
@@ -12,6 +19,6 @@
 }
 
 .home-img-btn {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }

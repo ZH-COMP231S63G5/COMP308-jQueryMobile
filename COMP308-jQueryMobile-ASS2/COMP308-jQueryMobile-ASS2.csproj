@@ -287,6 +287,7 @@
     <Content Include="images\in.png" />
     <Content Include="images\logo.png" />
     <Content Include="index.html" />
+    <Content Include="index0.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.8.0.intellisense.js" />
     <Content Include="Scripts\app.js" />

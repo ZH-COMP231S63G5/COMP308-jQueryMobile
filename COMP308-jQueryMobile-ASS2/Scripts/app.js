@@ -1,4 +1,11 @@
-﻿function init() {
+﻿//
+//  File name : app.js
+//  Author's name : Zhixiang Hu
+//  Web site name : Zhixiang Hu Protfolio Site
+//  This is javascript of the web site
+
+
+function init() {
     console.log("mobile start");
 
 }
