@@ -282,6 +282,9 @@
     <Content Include="images\App21.png" />
     <Content Include="images\App3.png" />
     <Content Include="images\App31.png" />
+    <Content Include="images\fb.png" />
+    <Content Include="images\gplus.png" />
+    <Content Include="images\in.png" />
     <Content Include="images\logo.png" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
