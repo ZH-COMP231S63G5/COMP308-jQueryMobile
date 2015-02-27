@@ -47,11 +47,11 @@
                     <div class="ui-grid-a">
                         <div class="ui-block-a">
                             <div class="ui-bar ui-bar-a" >
-                                <a href="#projects" class="home-img-btn">Projects</a>
+                                <a href="#projects" class="home-img-btn" data-icon="bullets">Projects</a>
                             </div></div>
                         <div class="ui-block-b">
                             <div class="ui-bar ui-bar-a" >
-                                <a href="#services" class="home-img-btn">Services</a>
+                                <a href="#services" class="home-img-btn" data-icon="tag">Services</a>
                             </div></div>
                     </div>
             </div>
@@ -143,15 +143,30 @@
         <section data-role="content">
             <h1>Contact me</h1>
 
+            <label for="username" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="username" id="username" value="" placeholder="Username"/>
+
+            <label for="phone" class="ui-hidden-accessible">Phone:</label>
+            <input type="text" name="phone" id="phone" value="" placeholder="Phone"/>
+
+            <label for="email" class="ui-hidden-accessible">Email:</label>
+            <input type="text" name="email" id="email" value="" placeholder="Email"/>
+
+            <label for="content" class="ui-hidden-accessible">Content:</label>
+
+            <textarea name="content" id="content" placeholder="Content"></textarea>
+             <a href="#home" class="ui-btn ui-btn-inline ui-corner-all" data-role="button" data-icon="mail" data-transition="slideup">Send</a>
+
+
             <ul>
                 <li>mobile : <a href="wtai://wp/mc;16476336919">1-643-633-6919</a></li>
                 <li>email : johnnyhu@ymail.com</li>
                 <li>address : 941 Progress Ave, Toronto, Centennial College</li>
             </ul>
 
-            <img src="images/fb.png" alt=""/>
-            <img src="images/gplus.png" alt=""/>
-            <img src="images/in.png" alt=""/>
+            <a href="#contactme"><img src="images/fb.png" alt=""/></a>
+            <a href="#contactme"><img src="images/gplus.png" alt=""/></a>
+            <a href="#contactme"><img src="images/in.png" alt=""/></a>
 
             <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
         </section>
